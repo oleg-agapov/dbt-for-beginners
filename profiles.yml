@@ -1,0 +1,7 @@
+dbt_demo:
+  target: dev
+  outputs:
+    dev:
+      type: duckdb
+      path: '/Users/oleg/dev/dbt-for-beginners/data.duckdb'
+      schema: dbt

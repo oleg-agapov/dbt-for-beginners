@@ -1,0 +1,13 @@
+# dbt
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# macos
+.DS_Store
+
+# python
+__pycache__/
+.ipynb_checkpoints
+venv/
