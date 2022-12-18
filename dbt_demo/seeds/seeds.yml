@@ -1,0 +1,44 @@
+version: 2
+
+seeds:
+  - name: users
+    description: Seed for the `users.csv` file
+    docs:
+      show: false
+    config:
+      # schema: target_schema_name
+      column_types:
+        id: INTEGER
+        first_name: VARCHAR
+        last_name: VARCHAR
+        email: VARCHAR
+        birthday: DATE
+        country: VARCHAR
+    columns:
+      - name: id
+      - name: first_name
+      - name: last_name
+      - name: email
+      - name: birthday
+      - name: country
+
+seeds:
+  - name: payments
+    description: Seed for the `payments.csv` file
+    docs:
+      show: false
+    config:
+      column_types:
+        id: INTEGER
+        event_date: DATE
+        gross_revenue: DOUBLE
+        currency: VARCHAR
+        user_id: INTEGER
+        tax_rate: DOUBLE
+    columns:
+      - name: id
+      - name: event_date
+      - name: gross_revenue
+      - name: currency
+      - name: user_id
+      - name: tax_rate
