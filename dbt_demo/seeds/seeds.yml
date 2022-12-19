@@ -12,14 +12,14 @@ seeds:
         first_name: VARCHAR
         last_name: VARCHAR
         email: VARCHAR
-        birthday: DATE
+        reg_date: TIMESTAMP
         country: VARCHAR
     columns:
       - name: id
       - name: first_name
       - name: last_name
       - name: email
-      - name: birthday
+      - name: reg_date
       - name: country
 
 seeds:
@@ -30,7 +30,7 @@ seeds:
     config:
       column_types:
         id: INTEGER
-        event_date: DATE
+        event_date: TIMESTAMP
         gross_revenue: DOUBLE
         currency: VARCHAR
         user_id: INTEGER
