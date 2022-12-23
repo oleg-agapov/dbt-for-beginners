@@ -1,0 +1,26 @@
+version: 2
+
+sources:
+  - name: raw_data
+    description: This is a source with raw tables coming from DWH
+    schema: dbt
+    
+    tables:
+      - name: users
+        description: Table with registered users
+        columns:
+          - name: id
+          - name: first_name
+          - name: last_name
+          - name: email
+          - name: reg_date
+          - name: country
+      - name: payments
+        description: Table with purchases made by users
+        columns:
+          - name: id
+          - name: event_date
+          - name: gross_revenue
+          - name: currency
+          - name: user_id
+          - name: tax_rate
