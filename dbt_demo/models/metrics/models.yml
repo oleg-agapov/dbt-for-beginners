@@ -1,0 +1,30 @@
+version: 2
+
+models:
+  - name: registrations
+    description: Registrations metrics calculated by month
+    columns:
+      - name: reg_month
+        description: Month where registration happened
+      - name: registrations
+        description: A number or registered users
+  
+  - name: sales
+    description: Table that shows monthly sales
+    columns:
+      - name: payment_month
+        description: Month where payment happened
+      - name: orders_number
+        description: A number or orders
+  
+  - name: final_metrics
+    description: An overview table with registration and sales metrics
+    columns:
+      - name: reg_month
+        description: Month where registration happened
+      - name: registrations
+        description: A number or registered users
+      - name: payment_month
+        description: Month where payment happened
+      - name: orders_number
+        description: A number or orders
