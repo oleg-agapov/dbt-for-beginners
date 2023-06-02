@@ -9,7 +9,6 @@
             ]
         }
     },
-    
     "forwardPorts": [
         8080
     ],
@@ -19,6 +18,5 @@
             "onAutoForward": "notify"
         }
     },
-    "postCreateCommand": "pip install -r requirements.txt"
-
+    "postCreateCommand": "pip install --upgrade pip && pip install -r requirements.txt"
 }
