@@ -1,0 +1,24 @@
+{
+    "name": "Python 3",
+    "image": "python:3.11",
+    "customizations": {
+        "vscode": {
+            "settings": {},
+            "extensions": [
+                "ms-python.python"
+            ]
+        }
+    },
+    
+    "forwardPorts": [
+        8080
+    ],
+    "portsAttributes": {
+        "8080": {
+            "label": "dbt docs",
+            "onAutoForward": "notify"
+        }
+    },
+    "postCreateCommand": "pip install -r requirements.txt"
+
+}
