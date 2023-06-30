@@ -5,8 +5,7 @@
         "vscode": {
             "settings": {},
             "extensions": [
-                "ms-python.python",
-                "RandomFractalsInc.duckdb-sql-tools"
+                "ms-python.python"
             ]
         }
     },
